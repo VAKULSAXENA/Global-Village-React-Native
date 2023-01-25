@@ -4,9 +4,7 @@ import { containerFull, goback, logo1 } from '../../../CommonCss/pagecss'
 import { AntDesign } from '@expo/vector-icons';
 import logo from '../../../../assets/logo.png';
 import { formbtn, formHead3, formInput } from '../../../CommonCss/formcss';
-import ForgotPassword_ChoosePassword from './ForgotPassword_ChoosePassword';
-import Login from './../Login/Login';
-import ForgotPassword_EnterEmail from './ForgotPassword_EnterEmail';
+
 
 const ForgotPassword_EnterVerificationCode = ({navigation}) => {
   return (

@@ -4,12 +4,12 @@ import { containerFull, goback, logo1 } from '../../../CommonCss/pagecss'
 import { AntDesign } from '@expo/vector-icons';
 import logo from '../../../../assets/logo.png';
 import { formbtn, formHead2, formInput } from '../../../CommonCss/formcss';
-import ForgotPassword_EnterVerificationCode from './ForgotPassword_EnterVerificationCode';
+
 
 const ForgotPassword_ChoosePassword = ({navigation}) => {
   return (
     <View style={containerFull}>
-    <TouchableOpacity onPress={()=>navigation.navigate('ForgotPassword_EnterVerificationCode')} style={goback}>
+    <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={goback}>
     <AntDesign name="back" size={28} color="black" />
     <Text style={{color:'black',fontSize:16,marginLeft:10,fontWeight:'bold'}}>Go Back</Text>
     </TouchableOpacity>

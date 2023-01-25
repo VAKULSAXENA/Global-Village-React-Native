@@ -5,8 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import logo from '../../../../assets/logo.png';
 import { formbtn, formHead2, formInput } from '../../../CommonCss/formcss';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Mainpage from './../../Mainpage/Mainpage';
-import ForgotPassword_ChoosePassword from './ForgotPassword_ChoosePassword';
+
 
 const ForgotPassword_AccountRecovered = ({navigation}) => {
   return (
