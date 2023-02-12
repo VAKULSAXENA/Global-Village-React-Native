@@ -12,6 +12,12 @@ module.exports = {
         resizeMode:'contain',
         marginBottom: 20
     },
+    logo2: {
+        height:60,
+        width: 60,
+        resizeMode:'contain',
+        // marginBottom: 20
+    },
     hr80:{
         width:'80%',
         height:1,
@@ -21,8 +27,11 @@ module.exports = {
     goback:{
         flexDirection:'row',
         position:'absolute',
-        top:50,
         left:20,
         alignItems:'center'
+    },
+    icon1:{
+        color:'white',
+        fontSize:50
     }
 }

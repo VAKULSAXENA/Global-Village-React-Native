@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -13,6 +12,10 @@ import ForgotPassword_EnterVerificationCode from './src/Screens/LoginSignup/Forg
 import ForgotPassword_ChoosePassword from './src/Screens/LoginSignup/ForgotPassword/ForgotPassword_ChoosePassword';
 import ForgotPassword_AccountRecovered from './src/Screens/LoginSignup/ForgotPassword/ForgotPassword_AccountRecovered';
 import Mainpage from './src/Screens/Mainpage/Mainpage';
+import Allchats from './src/Screens/ChatSection/Allchats';
+import NotificationPage from './src/Screens/Mainpage/NotificationPage';
+import SearchUserPage from './src/Screens/Mainpage/SearchUserPage';
+import My_UserProfile from './src/Screens/Profile/My_UserProfile';
 
 
 const Stack = createNativeStackNavigator();
@@ -20,6 +23,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
+
     <Stack.Navigator screenOptions={{
       headerShown:false,
       animation:'slide_from_right'
@@ -34,6 +38,10 @@ export default function App() {
       <Stack.Screen name="ForgotPassword_EnterVerificationCode" component={ForgotPassword_EnterVerificationCode} />
       <Stack.Screen name="ForgotPassword_ChoosePassword" component={ForgotPassword_ChoosePassword} />
       <Stack.Screen name="ForgotPassword_AccountRecovered" component={ForgotPassword_AccountRecovered} />
+      <Stack.Screen name="Allchats" component={Allchats} options={{animation:'slide_from_bottom'}} />
+      <Stack.Screen name="SearchUserPage" component={SearchUserPage} options={{animation:'slide_from_left'}} />
+      <Stack.Screen name="NotificationPage" component={NotificationPage} options={{animation:'slide_from_left'}} />
+      <Stack.Screen name="My_UserProfile" component={My_UserProfile} options={{animation:'slide_from_left'}} />
       <Stack.Screen name="Mainpage" component={Mainpage} />
       
     </Stack.Navigator>
