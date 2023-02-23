@@ -32,6 +32,6 @@ module.exports = {
     },
     icon1:{
         color:'white',
-        fontSize:50
+        fontSize:35
     }
 }

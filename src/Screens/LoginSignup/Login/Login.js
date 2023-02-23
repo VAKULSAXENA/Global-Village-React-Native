@@ -4,6 +4,7 @@ import logo from '../../../../assets/logo.png';
 import { containerFull,hr80,logo1 } from '../../../CommonCss/pagecss';
 import { formbtn, formHead, formInput, formTextLinkCenter, formTextLinkRight } from '../../../CommonCss/formcss';
 import Mainpage from './../../Mainpage/Mainpage';
+import { StatusBar } from 'expo-status-bar';
 
 
 const Login = ({navigation}) => {

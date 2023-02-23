@@ -16,6 +16,7 @@ import Allchats from './src/Screens/ChatSection/Allchats';
 import NotificationPage from './src/Screens/Mainpage/NotificationPage';
 import SearchUserPage from './src/Screens/Mainpage/SearchUserPage';
 import My_UserProfile from './src/Screens/Profile/My_UserProfile';
+import MyProducts from './src/Screens/MyProducts';
 
 
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,10 @@ export default function App() {
       headerShown:false,
       animation:'slide_from_right'
     }}>
+      <Stack.Screen name="MyProducts" component={MyProducts} options={{
+      headerShown:true,
+      animation:'slide_from_right'
+    }} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Signup_EnterEmail" component={Signup_EnterEmail} />
       <Stack.Screen name="Signup_EnterVerificationCode" component={Signup_EnterVerificationCode} />

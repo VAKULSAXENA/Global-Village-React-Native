@@ -3,7 +3,8 @@ import React from 'react'
 import { icon1, logo2 } from '../CommonCss/pagecss'
 import logo from '../../assets/logo.png'
 import { Ionicons } from '@expo/vector-icons';
-import Constants from 'expo-constants'
+import Constants from 'expo-constants';
+
 
 const Topnavbar = ({navigation,page}) => {
   return (
@@ -11,7 +12,11 @@ const Topnavbar = ({navigation,page}) => {
     <Image source={logo} style={logo2}/>
     {
       page==='Mainpage' &&
-    <Ionicons name="chatbubbles" size={24} color="black" style={icon1} onPress={()=>navigation.navigate('Allchats')}/>
+    <Ionicons name="chatbubbles" color="black" style={icon1} onPress={()=>navigation.navigate('Allchats')}/>
+    }
+    {
+      page==='My_UserProfile' &&
+      <Ionicons name="settings-sharp"style={icon1} color="white" />
     }
    
     </View>
